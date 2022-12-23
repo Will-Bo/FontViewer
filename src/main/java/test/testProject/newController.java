@@ -24,14 +24,13 @@ public class newController {
 	
 	@FXML
 	private void exampleMethod() throws IOException{
-		System.out.printf("This is an example\n");
 		testComboBox.getItems().clear();
-		//getFontList();
 		ObservableList<String> options = FXCollections.observableArrayList();
 		for (String f : getFontList()) {
-			options.add(f);
+			if(!options.contains(f)) {
+				options.add(f);
+			}
 		}
-		System.out.printf("%s\n", options);
 		testComboBox.getItems().addAll(options);
 		
 	}
@@ -40,9 +39,6 @@ public class newController {
 		GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 
 		List<String> allFonts = Font.getFontNames();//ge.getAllFonts();
-		for (String f : allFonts) {
-//			System.out.printf("%s\n", f);
-		}
 		return allFonts;
 	}
 	
@@ -57,8 +53,6 @@ public class newController {
 		
 		for (String f : allFonts) {
 			if (f == testComboBox.getValue()) {
-				System.out.println("Found it!");
-				System.out.printf("%s\n", f);
 				foundFont = f;
 			}
 		}
