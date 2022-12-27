@@ -12,6 +12,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class newController {
 
@@ -21,6 +22,10 @@ public class newController {
 	private Button applyButton;
 	@FXML
 	private Label exampleText;
+	@FXML
+	private Label titleLabel;
+	@FXML 
+	private TextField mainTextField;
 
 	public newController() {
 
@@ -62,7 +67,9 @@ public class newController {
 		}
 		
 		exampleText.setFont(new Font(foundFont, 20.0));
-		
+		mainTextField.setFont(new Font(foundFont, 20.0));
+		titleLabel.setFont(new Font(foundFont, 36.0));
+	
 		
 	}
 }
