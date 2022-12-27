@@ -21,9 +21,13 @@ public class newController {
 	private Button applyButton;
 	@FXML
 	private Label exampleText;
+
+	public newController() {
+
+	}
 	
 	@FXML
-	private void exampleMethod() throws IOException{
+	void populateFonts() throws IOException{
 		testComboBox.getItems().clear();
 		ObservableList<String> options = FXCollections.observableArrayList();
 		for (String f : getFontList()) {

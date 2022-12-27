@@ -8,14 +8,13 @@
 
 <VBox alignment="CENTER" prefHeight="241.0" prefWidth="249.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.testProject.newController">
    <children>
-      <Label fx:id="exampleText" text="This is a Test" textAlignment="CENTER" />
       <VBox alignment="CENTER" prefHeight="50.0" prefWidth="210.0">
          <children>
-            <Button fx:id="primaryButton" onAction="#exampleMethod" text="Populate Combo Box" />
-            <Button fx:id="applyButton" mnemonicParsing="false" onAction="#applyFont" text="Apply Font" />
+            <Label fx:id="exampleText" text="This is a Test" textAlignment="CENTER" />
          </children>
       </VBox>
-      <ComboBox fx:id="testComboBox" prefWidth="150.0" />
+      <ComboBox fx:id="testComboBox" onMouseEntered="#populateFonts" prefWidth="150.0" />
+      <Button fx:id="applyButton" mnemonicParsing="false" onAction="#applyFont" text="Apply Font" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
