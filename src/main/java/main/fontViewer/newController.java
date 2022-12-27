@@ -1,4 +1,4 @@
-package test.testProject;
+package main.fontViewer;
 
 import javafx.scene.text.Font;
 import java.awt.GraphicsEnvironment;

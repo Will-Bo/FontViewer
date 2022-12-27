@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="241.0" prefWidth="249.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.testProject.newController">
+<VBox alignment="CENTER" prefHeight="241.0" prefWidth="249.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.fontViewer.newController">
    <children>
       <Label fx:id="titleLabel" alignment="TOP_CENTER" prefHeight="50.0" prefWidth="265.0" text="FontViewer!" textAlignment="CENTER">
          <font>

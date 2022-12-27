@@ -4,6 +4,6 @@ module test.testProject {
 	requires java.desktop;
 	requires javafx.base;
 
-    opens test.testProject to javafx.fxml;
-    exports test.testProject;
+    opens main.fontViewer to javafx.fxml;
+    exports main.fontViewer;
 }

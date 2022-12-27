@@ -1,4 +1,4 @@
-package test.testProject;
+package main.fontViewer;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

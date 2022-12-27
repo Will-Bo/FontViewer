@@ -1,4 +1,4 @@
-package test.testProject;
+package main.fontViewer;
 
 import java.io.IOException;
 import javafx.fxml.FXML;
