@@ -1,5 +1,5 @@
-test/testProject/PrimaryController.class
-test/testProject/App.class
+main/fontViewer/newController.class
+main/fontViewer/App.class
 module-info.class
-test/testProject/newController.class
-test/testProject/SecondaryController.class
+main/fontViewer/SecondaryController.class
+main/fontViewer/PrimaryController.class
