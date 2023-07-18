@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextArea;
 
 public class newController {
 
@@ -21,11 +22,9 @@ public class newController {
 	@FXML
 	private Button applyButton;
 	@FXML
-	private Label exampleText;
-	@FXML
 	private Label titleLabel;
-	@FXML 
-	private TextField mainTextField;
+    @FXML
+    private TextArea mainTextArea;
 
 	public newController() {
 
@@ -47,7 +46,7 @@ public class newController {
 	private List<String> getFontList() {
 		GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 
-		List<String> allFonts = Font.getFontNames();//ge.getAllFonts();
+		List<String> allFonts = Font.getFontNames();
 		return allFonts;
 	}
 	
@@ -66,10 +65,10 @@ public class newController {
 			}
 		}
 		
-		exampleText.setFont(new Font(foundFont, 20.0));
-		mainTextField.setFont(new Font(foundFont, 20.0));
+//		exampleText.setFont(new Font(foundFont, 20.0));
+//		mainTextField.setFont(new Font(foundFont, 20.0));
 		titleLabel.setFont(new Font(foundFont, 36.0));
-	
+        mainTextArea.setFont(new Font(foundFont, 20.0));	
 		
 	}
 }
